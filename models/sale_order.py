@@ -1,9 +1,17 @@
 from odoo import api, fields, models, _
 
+class ProductTemplate(models.Model):
+    _inherit = 'product.template'
+
+    webshop = fields.Boolean(
+        str='WS',
+        default=False,
+        help='Check this, if product is sold via bbi webshop',
+        store=True,
+        readonly=False,)
+
 class ProductProduct(models.Model):
     _inherit = 'product.product'
-
-    todo webshop boolean einfügen für KJ Wunsch
 
     def get_product_multiline_description_sale(self):
             """ Compute a multiline description of this product, in the context of sales
