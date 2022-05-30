@@ -1,15 +1,5 @@
 from odoo import api, fields, models, _
 
-class ProductTemplate(models.Model):
-    _inherit = 'product.template'
-
-    webshop = fields.Boolean(
-        str='WS',
-        default=False,
-        help='Check this, if product is sold via bbi webshop',
-        store=True,
-        readonly=False,)
-
 class ProductProduct(models.Model):
     _inherit = 'product.product'
 

@@ -5,12 +5,13 @@
 # Version 1.0 Webshopeigenschaft an product_template, Positionsfreitext im angebot vom Produkt
 
 {
-  'name': 'bbi mod sale',
-  'version': '1.0',
+  'name': 'bbi_mod_sale',
+  'version': '1.2',
+  'author': "Hanning Liu, Tilo Karczewski",
   'category': 'Sale',
   'description': """
-     - verkürzte Übernahme der Sale-Produktbeschreibung in Angebotspositionen
-     - Erweiterung Produkt um Webshopeigenschaft
+     - verkürzte Übernahme der Sale-Produktbeschreibung in Angebotspositionen, März 22
+     - Erweiterung Produkt um Webshopeigenschaft, umgezogen in bbi_mod_stock in Mai 22
     """,
   'depends': [
     'base',
@@ -20,7 +21,5 @@
     'resource',
   ],
   'data': [
-    'views/product_template_form_view_bbi.xml',
-    'views/product_template_tree_view_bbi.xml',
   ],
 }
