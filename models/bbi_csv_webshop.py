@@ -11,19 +11,17 @@ class SaleOrder(models.Model):
 
     def csv_auslesen(self):
 
-        temp = 0
-        listoflists = []
-        message = ''
+        #temp = 0
+        #listoflists = []
+        ausgabe = ''
         for i in self:
             for j in i.order_line:
                 message = message + str(j.product_uom_qty) + ';' + str(j.product_id.default_code)  + ';' + 'Test' + '\n'
                 #templist = [j.product_uom_qty, j.product_id.default_code, 'Test']
                 #listoflists.append(templist)
                 #temp = temp + 1
-        #raise ValidationError (str(listoflists))
 
-
-        raw = str(message).encode(encoding='utf-8', errors='replace')
+        raw = ausgabe.encode(encoding='utf-8', errors='replace')
         self.csvdata = base64.b64encode(raw)
 
         self.csvdata_file_name = 'CSV Datei.csv'
