@@ -1,0 +1,1 @@
+18      Sales order     sale.order      standard        [true]          BZV-%(range_year)s%(month)s%(day)s
