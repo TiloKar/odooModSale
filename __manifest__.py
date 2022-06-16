@@ -13,6 +13,7 @@
      - verkürzte Übernahme der Sale-Produktbeschreibung in Angebotspositionen, März 22
      - Erweiterung Produkt um Webshopeigenschaft, umgezogen in bbi_mod_stock in Mai 22
      - qweb report hacks in mod integriert, Juni 22
+     - sale order als CSV auslesbar, Juni 22
     """,
   'depends': [
     'base',
@@ -25,5 +26,6 @@
     'report/bbi_report_saleorder_document.xml',
     'report/bbi_report_saleorder.xml',
     'report/bbi_report_proforma.xml',
+    'views/bbi_csv_webshop.xml',
   ],
 }

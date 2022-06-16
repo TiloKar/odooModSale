@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="bbi_csv_webshop" model="ir.ui.view">
+    <field name="name">bbi.csv.webshop</field>
+    <field name="model">sale.order</field>
+    <field name="inherit_id" ref="sale.view_order_form"/>
+    <field name="arch" type="xml">
+      <xpath expr="//group[@name='sale_header']//group[@name='order_details']//field[@name='payment_term_id']" position="after">
+        <button name='csv_auslesen' type="object" string="test" class="oe_highlight"/>
+        <field name='csvdata' filename='csvdata_file_name'/>
+        <field name='csvdata_file_name' invisible='1'/>
+      </xpath>
+    </field>
+  </record>
+</odoo>
