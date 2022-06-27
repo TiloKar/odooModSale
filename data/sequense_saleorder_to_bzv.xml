@@ -7,4 +7,10 @@
         <field name="prefix">BZV-%(range_year)s%(month)s%(day)s</field>
         <field name="padding">5</field>
     </record>
+    <!-- Sequences for internal transfers zu QM -->
+    <record id="stock.seq_wh_in" model="ir.sequence">
+        <field name="name">Adlershof Sequenz QM</field>
+        <field name="prefix">WH/QM/</field>
+        <field name="padding">5</field>
+    </record>
 </odoo>
