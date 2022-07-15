@@ -33,3 +33,8 @@ class SaleOrderLine(models.Model):
 
         """
         return product.get_product_multiline_description_sale()
+
+class SaleOrder(models.Model):
+    _inherit = 'sale.order'
+
+    #pseudo inherit, damit action für qweb button das modell in diesem namespace hat

@@ -5,7 +5,7 @@
       <t t-call="web.html_container">
         <t t-foreach="docs" t-as="doc">
           <t t-set="bbi_doc_id" t-value="1"/>
-          <t t-call="sale.report_saleorder_document" t-lang="doc.partner_id.lang"/>
+          <t t-call="bbi_mod_sale.report_minified_saleorder_bbi" t-lang="doc.partner_id.lang"/>
         </t>
       </t>
     </template>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!--record id="paperformat_euro_din_bbi" model="report.paperformat">
+            <field name="name">European A4 bbi</field>
+            <field name="default" eval="False" />
+            <field name="format">A4</field>
+            <field name="orientation">Portrait</field>
+            <field name="margin_top">27</field>
+            <field name="margin_bottom">40</field>
+            <field name="margin_left">20</field>
+            <field name="margin_right">10</field>
+            <field name="dpi">70</field>
+            <field name="header_line" eval="False" />
+            <field name="header_spacing">27</field>
+        </record>
+
+        <record id="action_report_saleorder" model="ir.actions.report">
+            <field name="name">Quotation / Order</field>
+            <field name="paperformat_id" ref="bbi_mod_sale.paperformat_euro_din_bbi" />
+            <field name="model">sale.order</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">sale.report_saleorder</field>
+            <field name="report_file">sale.report_saleorder</field>
+            <field name="print_report_name">(object.state in ('draft', 'sent') and 'Quotation - %s' % (object.name)) or 'Order - %s' % (object.name)</field>
+            <field name="binding_model_id" ref="model_sale_order"/>
+            <field name="binding_type">report</field>
+        </record-->
+
+    </data>
+    <template id="external_layout_bbi">
+        <t t-if="not o" t-set="o" t-value="doc"/>
+            <t t-if="not company">
+            <!-- Multicompany -->
+            <t t-if="company_id">
+               <t t-set="company" t-value="company_id"/>
+            </t>
+            <t t-elif="o and 'company_id' in o and o.company_id.sudo()">
+               <t t-set="company" t-value="o.company_id.sudo()"/>
+            </t>
+            <t t-else="else">
+               <t t-set="company" t-value="res_company"/>
+            </t>
+        </t>
+
+        <div t-attf-class="header">
+            <div style="heigth: 100px;">
+                <img style="position: relative; top: 10mm; left: 0mm; margin: 0; padding: 0; height: 75px;" t-if="company.logo" t-att-src="image_data_uri(company.logo)"/>
+                <div style="position: relative; top: 2mm; left: 60mm; margin: 0; padding: 0; width: 200px; font-size: 20px;" t-field="company.report_header" />
+            </div>
+            <div style="
+                border-top: solid 1px #aaa;
+                border-bottom: solid 1px #aaa;
+                margin-top: 15mm;
+                margin-bottom: 15mm;
+                padding-top: 1mm;
+                padding-bottom: 1mm;
+                display:block;
+                width: 100%;
+                ">
+                <t t-if="company.name">
+                    <span t-field="company.name"/>
+                </t>
+                <t t-if="company.street">
+                    <span>|</span> <span t-field="company.street"/>
+                </t>
+                <t t-if="company.street2">
+                    <span>|</span> <span t-field="company.street2"/>
+                </t>
+                <t t-if="company.zip">
+                    <span>|</span> <span t-field="company.zip"/>
+                </t>
+                <t t-if="company.city">
+                    <span t-if="not company.zip">|</span> <span t-field="company.city"/>
+                </t>
+                <t t-if="company.country_id">
+                    <span>|</span> <span t-field="company.country_id.name"/>
+                </t>
+            </div>
+
+            <!-- optionalen modellabhängigen header anfügen -->
+            <t t-if="specific_header">
+                <t t-out="specific_header"/>
+            </t>
+
+
+        </div>
+
+
+
+        <div t-attf-class="article" t-att-data-oe-model="o and o._name" t-att-data-oe-id="o and o.id" t-att-data-oe-lang="o and o.env.context.get('lang')">
+          <!-- CONTENT-->
+          <t t-out="0"/>
+        </div>
+
+        <div t-attf-class="footer">
+            <!-- Footer-->
+
+            <div class="company_details">
+
+                <table style="width:100%;">
+                    <tr>
+                        <td colspan="4">
+                            <div style="text-align: right;">
+                                Page: <span class="page"/> of <span class="topage"/>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr style="border-top: 1px solid #000;">
+                        <td style="width:25%;">
+                            <ul class="list-inline" t-att-style="'font-size: 10px'">
+                                <li t-if="company.name"><span t-field="company.name"/></li>
+                                <li t-if="company.street"><span t-field="company.street"/></li>
+                                <li t-if="company.street2"><span t-field="company.street2"/></li>
+                                <li>
+                                    <span t-if="company.country_id" t-field="company.country_id.code"/>
+                                    <span> - </span>
+                                    <span t-if="company.zip" t-field="company.zip"/>
+                                    <span t-if="company.city" t-field="company.city"/>
+                                </li>
+                                <li>
+                                    <span>Tax ID: 37/219/30527</span>
+                                </li>
+                            </ul>
+                        </td>
+                        <td style="width:25%;">
+                    <ul class="list-inline" t-att-style="'font-size: 10px'">
+                      <li ><span>CEO: Bernd-Ulrich-Wilhelm </span></li>
+                      <li ><span>Company based in Berlin</span></li>
+                      <li ><span>Registry court Charlottenburg</span></li>
+                      <li t-if="company.company_registry"><span t-field="company.company_registry"/></li>
+                    </ul>
+                  </td>
+                  <td style="width:25%;">
+                    <ul class="list-inline" t-if="company.partner_id.bank_ids" t-att-style="'font-size: 10px'">
+                      <t t-foreach="company.partner_id.bank_ids[:2]" t-as="bank">
+                        <li ><span>Bank account:</span></li>
+                        <li t-if="bank.bank_id.name"><span t-field="bank.bank_id.name" /></li>
+                        <li>IBAN: <span t-field="bank.acc_number" /></li>
+                        <li>BIC: <span t-field="bank.bank_id.bic" /></li>
+                      </t>
+                    </ul>
+                  </td>
+                  <td style="width:25%;">
+                    <ul class="list-inline" t-att-style="'font-size: 10px'">
+                      <li t-if="company.phone"><span t-field="company.phone" /></li>
+                      <li t-if="company.email"><span t-field="company.email" /></li>
+                      <li t-if="company.partner_id.website"><span t-field="company.partner_id.website" /></li>
+                      <li ><span>VAT: DE260083502</span></li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </div>
+  <!-- Footer angepasst -->
+        </div>
+    </template>
+</odoo>
