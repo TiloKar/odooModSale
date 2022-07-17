@@ -31,7 +31,7 @@
     </data>
     <template id="external_layout_bbi">
         <t t-if="not o" t-set="o" t-value="doc"/>
-            <t t-if="not company">
+        <t t-if="not company">
             <!-- Multicompany -->
             <t t-if="company_id">
                <t t-set="company" t-value="company_id"/>
@@ -83,14 +83,10 @@
             <t t-if="specific_header">
                 <t t-out="specific_header"/>
             </t>
-
-
         </div>
 
-
-
         <div t-attf-class="article" t-att-data-oe-model="o and o._name" t-att-data-oe-id="o and o.id" t-att-data-oe-lang="o and o.env.context.get('lang')">
-          <!-- CONTENT-->
+          <!-- CONTENT aus dem eigentlichen minified_template wird beim rendern hier reingeklatscht-->
           <t t-out="0"/>
         </div>
 
