@@ -85,7 +85,7 @@
             </t>
         </div>
 
-        <div t-attf-class="article" t-att-data-oe-model="o and o._name" t-att-data-oe-id="o and o.id" t-att-data-oe-lang="o and o.env.context.get('lang')">
+        <div t-att-style="'font-size: 12px'" t-attf-class="article" t-att-data-oe-model="o and o._name" t-att-data-oe-id="o and o.id" t-att-data-oe-lang="o and o.env.context.get('lang')">
           <!-- CONTENT aus dem eigentlichen minified_template wird beim rendern hier reingeklatscht-->
           <t t-out="0"/>
         </div>
