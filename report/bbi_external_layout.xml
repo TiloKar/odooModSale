@@ -1,34 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data>
 
-        <!--record id="paperformat_euro_din_bbi" model="report.paperformat">
-            <field name="name">European A4 bbi</field>
-            <field name="default" eval="False" />
-            <field name="format">A4</field>
-            <field name="orientation">Portrait</field>
-            <field name="margin_top">27</field>
-            <field name="margin_bottom">40</field>
-            <field name="margin_left">20</field>
-            <field name="margin_right">10</field>
-            <field name="dpi">70</field>
-            <field name="header_line" eval="False" />
-            <field name="header_spacing">27</field>
-        </record>
-
-        <record id="action_report_saleorder" model="ir.actions.report">
-            <field name="name">Quotation / Order</field>
-            <field name="paperformat_id" ref="bbi_mod_sale.paperformat_euro_din_bbi" />
-            <field name="model">sale.order</field>
-            <field name="report_type">qweb-pdf</field>
-            <field name="report_name">sale.report_saleorder</field>
-            <field name="report_file">sale.report_saleorder</field>
-            <field name="print_report_name">(object.state in ('draft', 'sent') and 'Quotation - %s' % (object.name)) or 'Order - %s' % (object.name)</field>
-            <field name="binding_model_id" ref="model_sale_order"/>
-            <field name="binding_type">report</field>
-        </record-->
-
-    </data>
     <template id="external_layout_bbi">
         <t t-if="not o" t-set="o" t-value="doc"/>
         <t t-if="not company">
@@ -44,48 +16,66 @@
             </t>
         </t>
 
-        <div t-attf-class="header">
-            <div style="heigth: 100px;">
+        <div t-attf-class="header" style="font-size: 12px; width:100%;">
+            <!--div style="heigth: 100px;">
                 <img style="position: relative; top: 10mm; left: 0mm; margin: 0; padding: 0; height: 75px;" t-if="company.logo" t-att-src="image_data_uri(company.logo)"/>
                 <div style="position: relative; top: 2mm; left: 60mm; margin: 0; padding: 0; width: 200px; font-size: 20px;" t-field="company.report_header" />
-            </div>
-            <div style="
-                border-top: solid 1px #aaa;
-                border-bottom: solid 1px #aaa;
-                margin-top: 15mm;
-                margin-bottom: 15mm;
-                padding-top: 1mm;
-                padding-bottom: 1mm;
-                display:block;
-                width: 100%;
-                ">
-                <t t-if="company.name">
-                    <span t-field="company.name"/>
-                </t>
-                <t t-if="company.street">
-                    <span>|</span> <span t-field="company.street"/>
-                </t>
-                <t t-if="company.street2">
-                    <span>|</span> <span t-field="company.street2"/>
-                </t>
-                <t t-if="company.zip">
-                    <span>|</span> <span t-field="company.zip"/>
-                </t>
-                <t t-if="company.city">
-                    <span t-if="not company.zip">|</span> <span t-field="company.city"/>
-                </t>
-                <t t-if="company.country_id">
-                    <span>|</span> <span t-field="company.country_id.name"/>
-                </t>
-            </div>
+            </div-->
+            <table style="width:100%;">
+                <tr>
+                        <td style=" width:200px;">
+                            <img style="margin: 0; padding: 0; height: 75px; margin-bottom: 6mm; margin-top: 8mm;" t-if="company.logo" t-att-src="image_data_uri(company.logo)"/>
+                        </td>
+                        <td style="font-size: 25px; vertical-align: bottom; text-align: left;">
+                            <div style="margin-bottom: 4.7mm;">
+                                innovation for biotech
+                            </div>
+                        </td>
+                </tr>
+                <tr>
+                    <td colspan ="2" style="">
+                        <div style="
+                            border-top: solid 1px #aaa;
+                            border-bottom: solid 1px #aaa;
+                            padding-top: 1mm;
+                            padding-bottom: 1mm;">
+                            <t t-if="company.name">
+                                <span t-field="company.name"/>
+                            </t>
+                            <t t-if="company.street">
+                                <span>|</span> <span t-field="company.street"/>
+                            </t>
+                            <t t-if="company.street2">
+                                <span>|</span> <span t-field="company.street2"/>
+                            </t>
+                            <t t-if="company.zip">
+                                <span>|</span> <span t-field="company.zip"/>
+                            </t>
+                            <t t-if="company.city">
+                                <span t-if="not company.zip">|</span> <span t-field="company.city"/>
+                            </t>
+                            <t t-if="company.country_id">
+                                <span>|</span> <span t-field="company.country_id.name"/>
+                            </t>
+                        </div>
+                    </td>
+                </tr>
+                <!-- optionalen modellabhängigen header anfügen
+            geht nicht da header und footer feste größe haben müssen!!!!!!
+                <t t-if="specific_header">
+                    <tr>
+                        <td colspan ="2">
+                            <div style="margin-bottom: 15mm;">
+                                <t t-out="specific_header"/>
+                            </div>
+                        </td>
+                    </tr>
+                </t>-->
+            </table>
 
-            <!-- optionalen modellabhängigen header anfügen -->
-            <t t-if="specific_header">
-                <t t-out="specific_header"/>
-            </t>
         </div>
 
-        <div t-att-style="'font-size: 12px'" t-attf-class="article" t-att-data-oe-model="o and o._name" t-att-data-oe-id="o and o.id" t-att-data-oe-lang="o and o.env.context.get('lang')">
+        <div style="font-size: 12px;" t-attf-class="article" t-att-data-oe-model="o and o._name" t-att-data-oe-id="o and o.id" t-att-data-oe-lang="o and o.env.context.get('lang')">
           <!-- CONTENT aus dem eigentlichen minified_template wird beim rendern hier reingeklatscht-->
           <t t-out="0"/>
         </div>
@@ -98,7 +88,7 @@
                 <table style="width:100%;">
                     <tr>
                         <td colspan="4">
-                            <div style="text-align: right;">
+                            <div style="text-align: right;font-size: 12px;">
                                 Page: <span class="page"/> of <span class="topage"/>
                             </div>
                         </td>

@@ -5,9 +5,9 @@
       <t t-set="doc" t-value="doc.with_context(lang=doc.partner_id.lang)" />
 
       <!--zusatz header teil spezifisch sale order-->
-      <t t-set="specific_header">
+      <!--t t-set="specific_header"-->
           <!--modellspezifischen zusatzblock zum wiederholen auf jeder seite hier platzieren-->
-      </t>
+      <!--/t-->
         <!--ab hier laufender seiteninhalt-->
       <div class="page">
         <!--   adressblock -->

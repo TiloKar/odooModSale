@@ -23,9 +23,11 @@
   ],
   'data': [
     'report/bbi_external_layout.xml',
-    'report/minified_saleorder.xml',
     'report/bbi_report_saleorder.xml',
     'report/bbi_report_proforma.xml',
+    'report/paperformat_bbi.xml',
+    'report/minified_saleorder.xml',
+    'report/change_paperformat.xml',
     'data/sequense_saleorder_to_bzv.xml'
   ],
 }
