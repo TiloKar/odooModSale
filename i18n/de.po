@@ -1,13 +1,13 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# 	* sale
+# 	* bbi_mod_sale
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-08 12:26+0000\n"
-"PO-Revision-Date: 2022-06-08 12:26+0000\n"
+"POT-Creation-Date: 2022-07-18 13:05+0000\n"
+"PO-Revision-Date: 2022-07-18 13:05+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -15,236 +15,231 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
-#. module: sale
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
+#. module: bbi_mod_sale
+#: model_terms:ir.ui.view,arch_db:bbi_mod_sale.report_minified_saleorder_bbi
 msgid "<b>Description: </b> <br/>"
 msgstr "<b>Beschreibung: </b> <br/>"
 
-#. module: sale
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
+#. module: bbi_mod_sale
+#: model_terms:ir.ui.view,arch_db:bbi_mod_sale.report_minified_saleorder_bbi
 msgid "<b>Further information: </b>"
 msgstr "<b>Zusätzliche Informationen:</b>"
 
-#. module: sale
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
+#. module: bbi_mod_sale
+#: model_terms:ir.ui.view,arch_db:bbi_mod_sale.report_minified_saleorder_bbi
 msgid ""
 "<br>Basis for this offer are our current General Terms and Conditions, which can be viewed here: www.bbi-biotech.com/en/agb.</br>\n"
-"           <br>For invoice amounts below 50,00 € net (without shipping costs) we charge a minimum quantity surcharge. The prices offered are valid depending on the amount indicated.</br>\n"
-"           <br>Due to the current corona pandemic, all specified delivery dates are only valid with reservation.</br>"
+"        <br>For invoice amounts below 50,00 € net (without shipping costs) we charge a minimum quantity surcharge. The prices offered are valid depending on the amount indicated.</br>\n"
+"        <br>Due to the current corona pandemic, all specified delivery dates are only valid with reservation.</br>"
 msgstr ""
 "Grundlage für dieses Angebot sind unsere aktuellen Allgemeinen Geschäftsbedingungen, einsehbar unter www.bbi-biotech.com/agb.\n"
 "Für Rechnungsbeträge unter 50,00€ netto (ohne Versandkosten) erheben wir einen Mindermengenzuschlag. Die angebotenen Preise gelten in Abhängigkeit zur angegebenen Stückzahl.\n"
 "Alle angegebenen Liefertermine gelten auf Grund der momentanen Corona-Pandemie nur unter Vorbehalt."
 
-#. module: sale
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
+#. module: bbi_mod_sale
+#: model_terms:ir.ui.view,arch_db:bbi_mod_sale.report_minified_saleorder_bbi
 msgid ""
 "<span groups=\"account.group_show_line_subtotals_tax_excluded\">Amount</span>\n"
-"                   <span groups=\"account.group_show_line_subtotals_tax_included\">Total price</span>"
-msgstr ""
+"                <span groups=\"account.group_show_line_subtotals_tax_included\">Total price</span>"
 "<span groups=\"account.group_show_line_subtotals_tax_excluded\">Betrag</span>\n"
 "                <span groups=\"account.group_show_line_subtotals_tax_included\">Summe</span>"
 
-#. module: sale
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
+#. module: bbi_mod_sale
+#: model_terms:ir.ui.view,arch_db:bbi_mod_sale.external_layout_bbi
 msgid "<span> - </span>"
 msgstr ""
 
-#. module: sale
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
+#. module: bbi_mod_sale
+#: model_terms:ir.ui.view,arch_db:bbi_mod_sale.report_minified_saleorder_bbi
 msgid "<span><b>Payment terms: </b></span>"
 msgstr "<span><b>Zahlungsbedingungen: </b></span>"
 
-#. module: sale
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
+#. module: bbi_mod_sale
+#: model_terms:ir.ui.view,arch_db:bbi_mod_sale.external_layout_bbi
 msgid "<span>Bank account:</span>"
 msgstr "<span>Bankverbindung</span>"
 
-#. module: sale
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
+#. module: bbi_mod_sale
+#: model_terms:ir.ui.view,arch_db:bbi_mod_sale.external_layout_bbi
 msgid "<span>CEO: Bernd-Ulrich-Wilhelm </span>"
 msgstr "<span>Geschäftsführer: Bernd-Ulrich-Wilhelm</span>"
 
-#. module: sale
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
+#. module: bbi_mod_sale
+#: model_terms:ir.ui.view,arch_db:bbi_mod_sale.external_layout_bbi
 msgid "<span>Company based in Berlin</span>"
 msgstr "<span>Sitz der Gesellschaft: Berlin</span>"
 
-#. module: sale
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
-#: model_terms:ir.ui.view,arch_db:sale.sale_order_portal_content
+#. module: bbi_mod_sale
+#: model_terms:ir.ui.view,arch_db:bbi_mod_sale.report_minified_saleorder_bbi
 msgid "<span>Disc.%</span>"
 msgstr "<span>Rabatt %</span>"
 
-#. module: sale
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
+#. module: bbi_mod_sale
+#: model_terms:ir.ui.view,arch_db:bbi_mod_sale.external_layout_bbi
 msgid "<span>Registry court Charlottenburg</span>"
 msgstr "<span>Registergericht Charlottenburg</span>"
 
-#. module: sale
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
+#. module: bbi_mod_sale
+#: model_terms:ir.ui.view,arch_db:bbi_mod_sale.external_layout_bbi
 msgid "<span>Tax ID: 37/219/30527</span>"
 msgstr "<span>Steuernr.: 37/219/30527</span>"
 
-#. module: sale
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
-msgid "<span>VAT no.: DE260083502</span>"
+#. module: bbi_mod_sale
+#: model_terms:ir.ui.view,arch_db:bbi_mod_sale.external_layout_bbi
+msgid "<span>VAT: DE260083502</span>"
 msgstr "<span>USt-IdNr.: DE260083502</span>"
 
-#. module: sale
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
+#. module: bbi_mod_sale
+#: model_terms:ir.ui.view,arch_db:bbi_mod_sale.external_layout_bbi
 msgid "<span>|</span>"
 msgstr ""
 
-#. module: sale
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
-#: model_terms:ir.ui.view,arch_db:sale.sale_order_portal_content
+#. module: bbi_mod_sale
+#: model_terms:ir.ui.view,arch_db:bbi_mod_sale.report_minified_saleorder_bbi
 msgid "<strong class=\"mr16\">Subtotal</strong>"
 msgstr "<strong class=\"mr16\">Zwischensumme</strong>"
 
-#. module: sale
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
+#. module: bbi_mod_sale
+#: model_terms:ir.ui.view,arch_db:bbi_mod_sale.report_minified_saleorder_bbi
 msgid "<strong>Contact</strong>"
 msgstr "<strong>Kontakt</strong>"
 
-#. module: sale
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
+#. module: bbi_mod_sale
+#: model_terms:ir.ui.view,arch_db:bbi_mod_sale.report_minified_saleorder_bbi
 msgid "<strong>Customer ID</strong>"
 msgstr "<strong>Kundennummer</strong>"
 
-#. module: sale
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
+#. module: bbi_mod_sale
+#: model_terms:ir.ui.view,arch_db:bbi_mod_sale.report_minified_saleorder_bbi
 msgid "<strong>Date</strong>"
 msgstr "<strong>Datum</strong>"
 
-#. module: sale
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
+#. module: bbi_mod_sale
+#: model_terms:ir.ui.view,arch_db:bbi_mod_sale.report_minified_saleorder_bbi
 msgid "<strong>E-Mail</strong>"
 msgstr ""
 
-#. module: sale
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
-msgid "<strong>Expiration:</strong>"
-msgstr "<strong>Gültig bis:</strong>"
-
-#. module: sale
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
+#. module: bbi_mod_sale
+#: model_terms:ir.ui.view,arch_db:bbi_mod_sale.report_minified_saleorder_bbi
 msgid "<strong>Fiscal Position Remark:</strong>"
 msgstr "<strong>Zahlungsbedingungen</strong>"
 
-#. module: sale
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
+#. module: bbi_mod_sale
+#: model_terms:ir.ui.view,arch_db:bbi_mod_sale.report_minified_saleorder_bbi
 msgid "<strong>Invoicing Address:</strong>"
 msgstr "<strong>Rechnungsadresse:<strong>"
 
-#. module: sale
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
+#. module: bbi_mod_sale
+#: model_terms:ir.ui.view,arch_db:bbi_mod_sale.report_minified_saleorder_bbi
 msgid "<strong>Invoicing and Shipping Address:</strong>"
 msgstr "<strong>Rechnungs- und Lieferadresse:</strong>"
 
-#. module: sale
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
+#. module: bbi_mod_sale
+#: model_terms:ir.ui.view,arch_db:bbi_mod_sale.report_minified_saleorder_bbi
 msgid "<strong>Number</strong>"
 msgstr "<strong>Nummer</strong>"
 
-#. module: sale
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
+#. module: bbi_mod_sale
+#: model_terms:ir.ui.view,arch_db:bbi_mod_sale.report_minified_saleorder_bbi
 msgid "<strong>Offer validity</strong>"
 msgstr "<strong>Angebotsgültigkeit</strong>"
 
-#. module: sale
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
+#. module: bbi_mod_sale
+#: model_terms:ir.ui.view,arch_db:bbi_mod_sale.report_minified_saleorder_bbi
 msgid "<strong>PO no.  </strong>"
 msgstr "<strong>Auftragsnr.</strong>"
 
-#. module: sale
-#: model_terms:ir.ui.view,arch_db:sale.report_invoice_document_inherit_sale
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
+#. module: bbi_mod_sale
+#: model_terms:ir.ui.view,arch_db:bbi_mod_sale.report_minified_saleorder_bbi
 msgid "<strong>Shipping Address:</strong>"
 msgstr "<strong>Lieferadresse:</strong>"
 
-#. module: sale
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
-msgid "<strong>Signature</strong>"
-msgstr "<strong>Unterschrift</strong>"
-
-#. module: sale
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
+#. module: bbi_mod_sale
+#: model_terms:ir.ui.view,arch_db:bbi_mod_sale.report_minified_saleorder_bbi
 msgid "<strong>VAT no.  </strong>"
 msgstr "<strong>USt-IdNr.      </strong>"
 
-#. module: sale
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
+#. module: bbi_mod_sale
+#: model_terms:ir.ui.view,arch_db:bbi_mod_sale.report_minified_saleorder_bbi
 msgid "Article number"
 msgstr "Artikelnummer"
 
-#. module: sale
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
+#. module: bbi_mod_sale
+#: model_terms:ir.ui.view,arch_db:bbi_mod_sale.external_layout_bbi
 msgid "BIC:"
 msgstr ""
 
-#. module: sale
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
+#. module: bbi_mod_sale
+#: model_terms:ir.ui.view,arch_db:bbi_mod_sale.external_layout_bbi
 msgid "IBAN:"
 msgstr ""
 
-#. module: sale
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
+#. module: bbi_mod_sale
+#: model_terms:ir.ui.view,arch_db:bbi_mod_sale.report_minified_saleorder_bbi
 msgid "No Sale document id"
 msgstr ""
 
-#. module: sale
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
+#. module: bbi_mod_sale
+#: model_terms:ir.ui.view,arch_db:bbi_mod_sale.report_minified_saleorder_bbi
 msgid "Nr."
 msgstr ""
 
-#. module: sale
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
-#: model_terms:ir.ui.view,arch_db:sale.view_sales_order_filter
-#: model_terms:ir.ui.view,arch_db:sale.view_sales_order_line_filter
+#. module: bbi_mod_sale
+#: model_terms:ir.ui.view,arch_db:bbi_mod_sale.report_minified_saleorder_bbi
 msgid "Order"
 msgstr "Auftrag"
 
-#. module: sale
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
+#. module: bbi_mod_sale
+#: model_terms:ir.ui.view,arch_db:bbi_mod_sale.external_layout_bbi
 msgid "Page: <span class=\"page\"/> of <span class=\"topage\"/>"
 msgstr "Seite: <span class=\"page\"/> von <span class=\"topage\"/>"
 
-#. module: sale
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
+#. module: bbi_mod_sale
+#: model:ir.model,name:bbi_mod_sale.model_product_product
+msgid "Product"
+msgstr "Produkt"
+
+#. module: bbi_mod_sale
+#: model_terms:ir.ui.view,arch_db:bbi_mod_sale.report_minified_saleorder_bbi
 msgid "Proforma Invoice"
 msgstr "Proforma Rechnung"
 
-#. module: sale
-#: model:ir.model.fields,field_description:sale.field_sale_order_line__product_uom_qty
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
-#: model_terms:ir.ui.view,arch_db:sale.sale_order_portal_content
+#. module: bbi_mod_sale
+#: model_terms:ir.ui.view,arch_db:bbi_mod_sale.report_minified_saleorder_bbi
 msgid "Quantity"
 msgstr "Menge"
 
-#. module: sale
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
+#. module: bbi_mod_sale
+#: model_terms:ir.ui.view,arch_db:bbi_mod_sale.report_minified_saleorder_bbi
 msgid "Quote"
 msgstr "Angebot"
 
-#. module: sale
-#: model:ir.model.fields,field_description:sale.field_sale_order__amount_tax
-#: model:ir.model.fields,field_description:sale.field_sale_order_line__tax_id
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
+#. module: bbi_mod_sale
+#: model:ir.model,name:bbi_mod_sale.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Kundenauftragszeile"
+
+#. module: bbi_mod_sale
+#: model_terms:ir.ui.view,arch_db:bbi_mod_sale.report_minified_saleorder_bbi
 msgid "Taxes"
 msgstr "Steuern"
 
-#. module: sale
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
+#. module: bbi_mod_sale
+#: model_terms:ir.ui.view,arch_db:bbi_mod_sale.report_minified_saleorder_bbi
 msgid "Undefined Sale document type"
 msgstr ""
 
-#. module: sale
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
+#. module: bbi_mod_sale
+#: model_terms:ir.ui.view,arch_db:bbi_mod_sale.report_minified_saleorder_bbi
 msgid "Unit price"
 msgstr "Stückpreis"
 
-#. module: sale
-#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
+#. module: bbi_mod_sale
+#: model_terms:ir.ui.view,arch_db:bbi_mod_sale.external_layout_bbi
+msgid "innovation for biotech"
+msgstr ""
+
+#. module: bbi_mod_sale
+#: model_terms:ir.ui.view,arch_db:bbi_mod_sale.report_minified_saleorder_bbi
 msgid "shop@bbi-biotech.com"
 msgstr ""
