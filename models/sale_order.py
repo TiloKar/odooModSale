@@ -106,7 +106,7 @@ class SaleOrder(models.Model):
     def createProjectProductTreeLevel1(self):
 
         vals = []
-        vals.append({'name': "{}-ohne Zourdnung".format(self.bbi_project_id)})
+        vals.append({'name': "{}-ohne Zuordnung".format(self.bbi_project_id)})
         vals.append({'name': "{}-Controller".format(self.bbi_project_id)})
 
         controllersChilds = self.createProjectProductTreeLevel2()
@@ -163,7 +163,7 @@ class SaleOrder(models.Model):
     #project controller xcubio unterebene
     def createProjectProductTreeLevel2(self):
         vals = []
-        vals.append({'name': "{}-gasmix".format(self.bbi_project_id)})
+        vals.append({'name': "{}-Gasmix".format(self.bbi_project_id)})
         vals.append({'name': "{}-ebom".format(self.bbi_project_id)})
         vals.append({'name': "{}-Blendensatz".format(self.bbi_project_id)})
         for p in vals:
