@@ -1,0 +1,4 @@
+
+Line 2: Group: MRP User | Model:sale.order.line | 1 1 0 0 --> 1 0 0 0
+Line 3: Group: MRP User | Model:sale.order | 1 1 0 0 --> 1 0 0 0
+Line 4: Group: MRP User | Model:account.account.tag | 0 0 0 0 --> 1 0 0 0

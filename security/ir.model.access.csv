@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+sale_mrp.access_sale_order_line_manufacturing_user,sale.order.line manufacturing.user,model_sale_order_line,mrp.group_mrp_user,1,0,0,0
+sale_mrp.access_sale_order_manufacturing_user,sale.order manufacturing.user,model_sale_order,mrp.group_mrp_user,1,0,0,0
+access_bbi_account_tag,account.account.tag,model_account_account_tag,mrp.group_mrp_user,1,0,0,0
