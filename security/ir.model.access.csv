@@ -1,4 +1,37 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-sale_mrp.access_sale_order_line_manufacturing_user,sale.order.line manufacturing.user,model_sale_order_line,mrp.group_mrp_user,1,0,0,0
-sale_mrp.access_sale_order_manufacturing_user,sale.order manufacturing.user,model_sale_order,mrp.group_mrp_user,1,0,0,0
-access_bbi_account_tag,account.account.tag,model_account_account_tag,mrp.group_mrp_user,1,0,0,0
+
+sale_mrp.access_sale_order_line_manufacturing_user,sale.order.line manufacturing.user,model_sale_order_line,mrp.group_mrp_user,0,0,0,0
+sale_mrp.access_sale_order_manufacturing_user,sale.order manufacturing.user,model_sale_order,mrp.group_mrp_user,0,0,0,0
+mrp.access_uom_uom_user,uom.uom user,model_uom_uom,mrp.group_mrp_user,0,0,0,0
+mrp.access_uom_category,uom.category,model_uom_category,mrp.group_mrp_user,0,0,0,0
+
+mrp.access_product_group_res_partner_mrp_manager,res_partner group_mrp_manager,model_res_partner,mrp.group_mrp_manager,0,0,0,0
+
+
+
+stock.access_product_product_stock_user,product_product_stock_user,model_product_product,stock.group_stock_user,0,0,0,0
+stock.access_product_template_stock_user,product.template stock user,model_product_template,stock.group_stock_user,0,0,0,0
+purchase_stock.access_purchase_order_stock_worker,purchase.order,model_purchase_order,stock.group_stock_user,0,0,0,0
+purchase_stock.access_purchase_order_line_stock_worker,purchase.order.line,model_purchase_order_line,stock.group_stock_user,0,0,0,0
+sale_stock.access_sale_order_stock_worker,sale.order stock worker,model_sale_order,stock.group_stock_user,0,0,0,0
+sale_stock.access_sale_order_line_stock_worker,sale.order.line stock worker,model_sale_order_line,stock.group_stock_user,0,0,0,0
+
+stock.access_product_group_res_partner_stock_manager,res_partner group_stock_manager,model_res_partner,stock.group_stock_manager,0,0,0,0
+stock_account.access_account_journal_stock_manager,account.journal stock manager,model_account_journal,stock.group_stock_manager,0,0,0,0
+sale_stock.access_account_journal,account.journal,model_account_journal,stock.group_stock_manager,0,0,0,0
+stock_account.access_account_account_stock_manager,account.account stock manager,model_account_account,stock.group_stock_manager,0,0,0,0
+account_move_line_stock_info.access_account_move_line,account.move.line,model_account_move_line,stock.group_stock_manager,0,0,0,0
+
+
+
+bbi_sale_order,bbi_sale_order,model_sale_order,fundamental_rights_user,1,0,0,0
+bbi_sale_order_line,bbi_sale_order_line,model_sale_order_line,fundamental_rights_user,1,0,0,0
+bbi_account_account_tag,bbi_account_account_tag,model_account_account_tag,fundamental_rights_user,1,0,0,0
+bbi_account_move,bbi_account_move,model_account_move,fundamental_rights_user,1,0,0,0
+bbi_account_move_line,bbi_account_move_line,model_account_move_line,fundamental_rights_user,1,0,0,0
+bbi_purchase_order,bbi_purchase_order,model_purchase_order,fundamental_rights_user,1,0,0,0
+bbi_purchase_order_line,bbi_purchase_order_line,model_purchase_order_line,fundamental_rights_user,1,0,0,0
+bbi_product_product,bbi_product_product,model_product_product,fundamental_rights_user,1,0,0,0
+bbi_product_template,bbi_product_template,model_product_template,fundamental_rights_user,1,0,0,0
+bbi_uom_uom,bbi_uom_uom,model_uom_uom,fundamental_rights_user,1,0,0,0
+bbi_uom_category,bbi_uom_category,model_uom_category,fundamental_rights_user,1,0,0,0

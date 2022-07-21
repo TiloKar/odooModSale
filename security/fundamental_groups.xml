@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="module_name_group_user" model="res.groups">
+    <field name="name">123</field>
+  </record>
+
+  <record model="ir.module.category" id="fundamental_rights">
+    <field name="name">Grundrechte</field>
+    <field name="description">Grundrechte für alle Nutzer</field>
+    <field name="sequence">20</field>
+  </record>
+
+  <record id="fundamental_rights_user" model="res.groups">
+    <field name="name">User</field>
+    <field name="category_id" ref="fundamental_rights"/>
+  </record>
+  <record id="fundamental_rights_manager" model="res.groups">
+    <field name="name">Admin</field>
+    <field name="category_id" ref="fundamental_rights"/>
+    <field name="implied_ids" eval="[(4, ref('fundamental_rights_user'))]"/>
+  </record>
+</odoo>

@@ -1,4 +1,33 @@
+Line 3: Group: MRP User | Model: sale.order.line | 1 0 0 0 --> 0 0 0 0
+Line 4: Group: MRP User | Model: sale.order | 1 0 0 0 --> 0 0 0 0
+Line 5: Group: MRP User | Model: uom.uom | 1 0 0 0 --> 0 0 0 0
+Line 6: Group: MRP User | Model: uom.category | 1 0 0 0 --> 0 0 0 0
 
-Line 2: Group: MRP User | Model:sale.order.line | 1 1 0 0 --> 1 0 0 0
-Line 3: Group: MRP User | Model:sale.order | 1 1 0 0 --> 1 0 0 0
-Line 4: Group: MRP User | Model:account.account.tag | 0 0 0 0 --> 1 0 0 0
+Line 8: Group: MRP Manager | Model: res.partner | 1 0 0 0 --> 0 0 0 0
+
+Line 12: Group: Stock User | Model: product.product | 1 0 0 0 --> 0 0 0 0
+Line 13: Group: Stock User | Model: product.template | 1 0 0 0 --> 0 0 0 0
+Line 14: Group: Stock User | Model: purchase.order | 1 0 0 0 --> 0 0 0 0
+Line 15: Group: Stock User | Model: purchase.order.line | 1 0 0 0 --> 0 0 0 0
+Line 16: Group: Stock User | Model: sale.order | 1 1 0 0 --> 0 0 0 0
+Line 17: Group: Stock User | Model: sale.order.line | 1 1 0 0 --> 0 0 0 0
+
+Line 19: Group: Stock Manager | Model: res.partner | 1 1 1 0 --> 0 0 0 0
+Line 20: Group: Stock Manager | Model: account.journal | 1 0 0 0 --> 0 0 0 0
+Line 21: Group: Stock Manager | Model: account.journal | 1 1 0 0 --> 0 0 0 0
+Line 22: Group: Stock Manager | Model: account.account | 1 0 0 0 --> 0 0 0 0
+Line 23: Group: Stock Manager | Model: account.move.line | 1 0 0 0 --> 0 0 0 0 // anscheinend auf 25 nicht vorhanden
+
+Line 27: Group: Grundrechte User | Model: sale.order | 0 0 0 0 --> 1 0 0 0
+Line 28: Group: Grundrechte User | Model: sale.order.line | 0 0 0 0 --> 1 0 0 0
+Line 29: Group: Grundrechte User | Model: account.account.tag | 0 0 0 0 --> 1 0 0 0
+Line 30: Group: Grundrechte User | Model: account.move | 0 0 0 0 --> 1 0 0 0
+Line 31: Group: Grundrechte User | Model: account.move.line | 0 0 0 0 --> 1 0 0 0
+Line 32: Group: Grundrechte User | Model: purchase.order | 0 0 0 0 --> 1 0 0 0
+Line 33: Group: Grundrechte User | Model: purchase.order.line | 0 0 0 0 --> 1 0 0 0
+Line 34: Group: Grundrechte User | Model: product.product | 0 0 0 0 --> 1 0 0 0
+Line 35: Group: Grundrechte User | Model: product.template | 0 0 0 0 --> 1 0 0 0
+Line 36: Group: Grundrechte User | Model: uom.uom | 0 0 0 0 --> 1 0 0 0
+Line 37: Group: Grundrechte User | Model: uom.category | 0 0 0 0 --> 1 0 0 0
+
+Line : Group:  | Model: | 0 0 0 0 --> 0 0 0 0
