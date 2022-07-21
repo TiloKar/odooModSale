@@ -30,8 +30,8 @@
     'report/change_paperformat.xml',
     'data/sequense_saleorder_to_bzv.xml',
     'views/sale_order_form_bbi.xml',
-    'security/ir.model.access.csv',
-    'security/fundamental_groups.xml',
-    'security/fundamental_groups.xml',
+    #'security/ir.model.access.csv',
+    #'security/fundamental_groups.xml',
+    #'security/fundamental_groups.xml',
   ],
 }
