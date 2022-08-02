@@ -36,3 +36,9 @@ class UomCategory(models.Model):
 
 class ResPartner(models.Model):
     _inherit = 'res.partner'
+
+class MrpBom(models.Model):
+    _inherit = 'mrp.bom'
+
+class MrpBomLine(models.Model):
+    _inherit = 'mrp.bom.line'

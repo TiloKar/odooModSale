@@ -16,5 +16,17 @@
   <delete model = "ir.rule" id = "sale.account_invoice_send_rule_see_personal"/>
   <delete model = "ir.rule" id = "crm.crm_rule_personal_lead"/>
   <delete model = "ir.rule" id = "crm.crm_activity_report_rule_personal_activities"/>
+
+  <delete model = "ir.rule" id = "sale.sale_order_line_see_all"/>
+  <delete model = "ir.rule" id = "sale.sale_order_see_all"/>
+  <delete model = "ir.rule" id = "sale.sale_order_report_see_all"/>
+  <delete model = "ir.rule" id = "sale.account_invoice_line_rule_see_all"/>
+  <delete model = "ir.rule" id = "sale.account_invoice_report_rule_see_all"/>
+  <delete model = "ir.rule" id = "crm.crm_activity_report_rule_all_activities"/>
+  <delete model = "ir.rule" id = "sale.account_invoice_send_rule_see_all"/>
+  <delete model = "ir.rule" id = "sales_team.crm_rule_all_salesteam"/>
+  <delete model = "ir.rule" id = "crm.crm_rule_all_lead"/>
+  <delete model = "ir.rule" id = "sale.account_invoice_rule_see_all"/>
+
   <delete model = "res.groups" id = "sales_team.group_sale_salesman_all_leads"/>
 </odoo>
