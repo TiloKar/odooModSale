@@ -59,6 +59,7 @@ purchase.access_product_template_purchase_user,product.template purchase_user,mo
 purchase.access_account_tag_purchase_user,account.account.tag,model_account_account_tag,purchase.group_purchase_user,0,0,0,0
 
 purchase.access_account_journal_manager,account.journal,model_account_journal,purchase.group_purchase_manager,0,0,0,0
+purchase.bbi_material,purchase_bbi_material,model_bbi_material,purchase.group_purchase_manager,1,1,1,1
 
 
 
@@ -77,3 +78,5 @@ bbi_uom_category,bbi_uom_category,model_uom_category,fundamental_rights_user,1,0
 bbi_res_partner,bbi_res_partner,model_res_partner,fundamental_rights_user,1,0,0,0
 bbi_mrp_bom,bbi_mrp_bom,model_mrp_bom,fundamental_rights_user,1,0,0,0
 bbi_mrp_bom_line,bbi_mrp_bom_line,model_mrp_bom_line,fundamental_rights_user,1,0,0,0
+bbi_mrp_workorder,bbi_mrp_workorder,model_mrp_workorder,fundamental_rights_user,1,0,0,0
+bbi_bbi_material,bbi_bbi_material,model_bbi_material,fundamental_rights_user,1,0,0,0

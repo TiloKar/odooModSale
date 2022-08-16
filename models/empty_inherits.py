@@ -42,3 +42,12 @@ class MrpBom(models.Model):
 
 class MrpBomLine(models.Model):
     _inherit = 'mrp.bom.line'
+
+class ProductionLot(models.Model):
+    _inherit = 'stock.production.lot'
+
+class MrpWorkorder(models.Model):
+    _inherit = 'mrp.workorder'
+
+class BbiMaterial(models.Model):
+    _inherit = 'bbi.material'

@@ -13,6 +13,8 @@
      - verkürzte Übernahme der Sale-Produktbeschreibung in Angebotspositionen, März 22
      - Erweiterung Produkt um Webshopeigenschaft, umgezogen in bbi_mod_stock in Mai 22
      - qweb report hacks in mod integriert, Juni 22
+     - Zugriffsrechte hinzugefügt und erweitert
+     - leere inherits generiert um Zugriffsänderung zu ermöglichen
     """,
   'depends': [
     'base',
