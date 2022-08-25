@@ -80,3 +80,4 @@ bbi_mrp_bom,bbi_mrp_bom,model_mrp_bom,fundamental_rights_user,1,0,0,0
 bbi_mrp_bom_line,bbi_mrp_bom_line,model_mrp_bom_line,fundamental_rights_user,1,0,0,0
 bbi_mrp_workorder,bbi_mrp_workorder,model_mrp_workorder,fundamental_rights_user,1,0,0,0
 bbi_bbi_material,bbi_bbi_material,model_bbi_material,fundamental_rights_user,1,0,0,0
+bbi_bbi_history,bbi_bbi_history,model_bbi_history,fundamental_rights_user,1,1,1,1

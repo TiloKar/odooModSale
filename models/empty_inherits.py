@@ -51,3 +51,6 @@ class MrpWorkorder(models.Model):
 
 class BbiMaterial(models.Model):
     _inherit = 'bbi.material'
+
+class BbiHistory(models.Model):
+    _inherit = 'bbi.history'
